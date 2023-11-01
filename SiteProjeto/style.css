@@ -175,5 +175,12 @@ background-color: #000;
 text-align: center;
 padding: 3px;
 color: white;
+display: block;
+justify-content: space-between;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+
 }
 /*Footer*/
