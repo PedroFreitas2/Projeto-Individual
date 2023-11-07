@@ -14,12 +14,13 @@ html {
 .container {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagens/airplane-flying-over-beach-shore-sunset-5k-l9-1080x1920.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./imagens/airplane_airplane_wing_metal_168961_1080x1920.jpg);
     background-position: center;
     background-size: cover;
     padding-left: 8%;
     padding-right: 8%;
     box-sizing: border-box;
+    
 
 }
 
@@ -94,99 +95,12 @@ button {
     height: 130vh;
     background-color: rgb(0, 0, 0);
     display: flex;
-    
+    padding-right: 10%;
     padding-top: 3%;
+    
  
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    justify-content: space-between;
-    
 
-}
-.linha{
-    display: flex;
-width: 100%;
-height: fit-content;
-align-items: center;
-
-}
-.linha1{
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: flex-end;
-    
-}
-
-.texto {
-    padding: 50px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: #000000;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-
-}
-.texto p{
-    font-family: sans-serif;
-    font-size: 100%;
-
-}
-
-
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    
-    
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(red, green, blue, alpha);
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.flip-card-front {
-    background-color: #ffffff;
-
-}
-
-.flip-card-back {
-    background-color: #828181;
-    color: black;
-    transform: rotateY(180deg);
-
-}
 
 
 /*Texto e cards*/
