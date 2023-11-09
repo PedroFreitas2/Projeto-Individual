@@ -14,9 +14,9 @@
             <img src="" class="logo">
             <nav>
                 <ul>
-                    <li><a href="">Sobre mim</a></li>
-                    <li><a href="#section2">Cadastre-se</a></li>
-                    <li><a href="">Login</a></li>
+                    <li><a href="#section2">Sobre mim</a></li>
+                    <li><a href="./cadastro.html">Cadastre-se</a></li>
+                    <li><a href="./login.html">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -35,82 +35,91 @@
 
 
 
-
-    <div class="container" id="section1">
-
+    <div class="explorar">
         <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
         <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
         <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
         <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+        <button class="tablink" onclick="openPage('News', this, 'green')">wrvr</button>
+        <button class="tablink" onclick="openPage('News', this, 'green')">brqb</button>
+        <button class="tablink" onclick="openPage('News', this, 'green')">bqerbqe</button>
 
+        <div id="Home" class="tabcontent">
+            <h3>Home</h3>
+            <p>Home is where the heart is..</p>
+        </div>
 
-        <h3>Home</h3>
-        <p>Home is where the heart is..</p>
+        <div id="News" class="tabcontent">
+            <h3>News</h3>
+            <p>Some news this fine day!</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <h3>About</h3>
+            <p>Who we are and what we do.</p>
+        </div>
     </div>
 
-    <div id="News" class="tabcontent">
-        <h3>News</h3>
-        <p>Some news this fine day!</p>
-    </div>
-
-    <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
-        <p>Get in touch, or swing by for a cup of coffee.</p>
-    </div>
-
-    <div id="About" class="tabcontent">
-        <h3>About</h3>
-        <p>Who we are and what we do.</p>
-    </div>
-    </div>
 
 
 
-    <div class="cadastro" id="section2">
+    <footer class="footer" id="section2">
+        <div class="imgmy">
+            <img src="./imagens/china.jpg" alt="">
+        </div>
 
-    </div>
-
-    <footer class="footer">
-        <p>
-            <li>
-
-                Sobre mim <br>
-                Cadastro <br>
-                Login
-
-
-            </li>
-        </p>
-        <p>7 maravilhas do mundo moderno</p>
-        <a href="https://github.com/PedroFreitas2/Projeto-Individual.git"></a>
-        <p>https://github.com/PedroFreitas2/Projeto-Individual.git</p>
-        <p></p>
+        <div class="textosobremim">
+            <h4>cqihebqvecq gfb 24ugu 24ugu2i4i 2g4fivb4ifbi4buf 43tuibt4uigu34g3
+                34g 24gbuo 3hgh34uogu3ohghqi35g35g
+                34g3io5hgioq35hgih35
+            </h4>
+        </div>
     </footer>
 </body>
 
 </html>
 <script>
     function openPage(pageName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+
+        // Show the specific tab content
+        document.getElementById(pageName).style.display = "block";
+
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
     }
 
-    // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-
-    // Show the specific tab content
-    document.getElementById(pageName).style.display = "block";
-
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
-  }
-
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
 </script>
